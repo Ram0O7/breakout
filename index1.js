@@ -84,7 +84,7 @@ function moveUser1() {
     const currentBtn = left.classList
     if (currentBtn.contains('left')) {
         if (currentPosition[0] > 0) {
-            currentPosition[0] -= 10
+            currentPosition[0] -= 20
             drawUser()
         }
     }
@@ -94,7 +94,7 @@ function moveUser2() {
     const currentBtn = right.classList
     if (currentBtn.contains('right')) {
         if (currentPosition[0] < (boardWidth - blockWidth - 5)) {
-            currentPosition[0] += 10
+            currentPosition[0] += 20
             drawUser()
         }
     }
