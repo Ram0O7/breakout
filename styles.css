@@ -53,16 +53,17 @@ body{
 .btns{
     display: flex;
     margin-top: 40px;
-    padding: 5px 10px;
-    width: 200px;
+    padding: 10px 20px;
+    width: 300px;
     justify-content: space-between;
 }
-.left,.right{
-    height: 35px;
-    width: 60px;
-    font-size: 20px;
-    padding: 4px 6px;
+.left,.right,.restart{
+    height: 45px;
+    width: 65px;
+    font-size: 25px;
+    padding: 5px 8px;
     border: 2px dashed magenta;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 10px;
     font-weight: bolder;
     color:rgb(0, 200, 255);
@@ -70,6 +71,13 @@ body{
     background: linear-gradient(indigo,orangered);
     transition: 1s linear ease-out;
 }
-.left:hover,.right:hover{
+.left:hover,.right:hover,.restart:hover{
     transform: scale(0.9);
+}
+.restart{
+    height: 80px;
+    width: 80px;   
+    font-size: 18px;
+    padding: 27px 7px;
+border-radius: 50%;
 }

@@ -1,6 +1,7 @@
 const grid = document.querySelector('.grid')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
+const restart = document.querySelector('.restart')
 const btns = [left,right]
 const scoreDisplay = document.getElementById('score')
 const blockWidth = 65
@@ -30,6 +31,11 @@ class Block {
     }
 }
 
+//restarting the game
+function res() {
+    window.location = 'index.html'
+}
+restart.addEventListener('click',res)
 //all my blocks
 const blocks = [
     new Block(2, 280),
